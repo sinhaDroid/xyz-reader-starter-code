@@ -26,4 +26,6 @@
     <color name="theme_accent">#04561A</color>
     <color name="ltgray">#ffe0e0e0</color>
     <color name="black">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="lightBlack">#040101</color>
 </resources>

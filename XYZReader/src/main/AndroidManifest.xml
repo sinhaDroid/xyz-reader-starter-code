@@ -47,6 +47,8 @@
             android:authorities="com.example.xyzreader"
             android:exported="false" />
 
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
     </application>
 
 </manifest>

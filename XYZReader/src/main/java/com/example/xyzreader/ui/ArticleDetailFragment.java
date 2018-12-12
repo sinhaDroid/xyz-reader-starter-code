@@ -127,7 +127,9 @@ public class ArticleDetailFragment extends Fragment implements
                     DateUtils.FORMAT_ABBREV_ALL).toString();
 
             String author = mCursor.getString(ArticleLoader.Query.AUTHOR);
-            final String body = Html.fromHtml(mCursor.getString(ArticleLoader.Query.BODY)).toString();
+            final String body = Html.fromHtml(mCursor.getString(ArticleLoader.Query.BODY)
+                    .substring(0,1000)
+                    .replaceAll("(\r\n|\n)", "<br />")).toString();
             String photo = mCursor.getString(ArticleLoader.Query.PHOTO_URL);
 
             if (mToolbar != null) {
